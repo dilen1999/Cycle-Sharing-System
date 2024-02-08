@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+  }
+  
+  .textStyle {
+    font-size: 35px;
+    font-family: 'Inter', sans-serif; /* Assuming 'Inter' is the font family name */
+    color: #0D0140;
+    font-weight: bold;
+    margin-top: 100px;
+  }
+  
+  .image {
+    height: 500px;
+    width: 440px;
+    margin-left: 380px;
+    margin-top: 90px;
+  }
+  
+  .color_text {
+    color: #2B96C3;
+  }
+  .gap{
+    margin-top: 40px;
+  }
+  .gap1{
+    margin-top: 40px;
+  }
+  .Username {
+    font-size: 24px;
+    font-family: inter;
+    margin-right: 220px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    text-align: right;
+  }
+  .input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 417px;
+    height: 57px;
+    background-color: #BBC5C7;
+    border-radius:24px;
+  }
+  .input input{
+    height: 50px;
+    width: 417px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .login{
+    display: flex;
+    justify-content: center;
+    width: 306px;
+    height: 58px;
+    color: #FFFFFF;
+    background: #009EFD;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 19px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 58px;
+  }
