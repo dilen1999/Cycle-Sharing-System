@@ -1,14 +1,127 @@
 import React, { useState } from "react";
 import "./home_page.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faBicycle, faUser, faSprayCan, faSquarePollHorizontal, faBell, faPersonFallingBurst, faMagnifyingGlassLocation, faChartBar } from "@fortawesome/free-solid-svg-icons";
 import logo from "../images/logo.jpeg";
+import { Link } from "react-router-dom";
 
 function Home_page() {
-  const [isClicked, setIsClicked] = useState(false);
+  const [homeClicked, setHomeClicked] = useState(false);
+  const [bikesClicked, setBikesClicked] = useState(false);
+  const [userClicked, setuserClicked] = useState(false);
+  const [PaymentClicked, setpaymentClicked] = useState(false);
+  const [ReportClicked, setreportClicked] = useState(false);
+  const [NotificationClicked, setnotificationClicked] = useState(false);
+  const [FairstructureClicked, setfairStructureClicked] = useState(false);
+  const [MaintenanceClicked, setmaintenanceClicked] = useState(false);
+  const [ChatClicked, setchatClicked] = useState(false);
 
-  const handleClick = () => {
-    setIsClicked(!isClicked);
+  const handleClickHome = () => {
+    setHomeClicked(true);
+    setBikesClicked(false);
+    setuserClicked(false);
+    setpaymentClicked(false);
+    setreportClicked(false);
+    setnotificationClicked(false);
+    setfairStructureClicked(false);
+    setmaintenanceClicked(false);
+    setchatClicked(false);
+  };
+
+  const handleClickBikes = () => {
+    setHomeClicked(false);
+    setBikesClicked(true);
+    setuserClicked(false);
+    setpaymentClicked(false);
+    setreportClicked(false);
+    setnotificationClicked(false);
+    setfairStructureClicked(false);
+    setmaintenanceClicked(false);
+    setchatClicked(false);
+  };
+
+  const handleClickUser = () => {
+    setHomeClicked(false);
+    setBikesClicked(false);
+    setuserClicked(true);
+    setpaymentClicked(false);
+    setreportClicked(false);
+    setnotificationClicked(false);
+    setfairStructureClicked(false);
+    setmaintenanceClicked(false);
+    setchatClicked(false);
+  };
+
+  const handleClickPayment = () => {
+    setHomeClicked(false);
+    setBikesClicked(false);
+    setuserClicked(false);
+    setpaymentClicked(true);
+    setreportClicked(false);
+    setnotificationClicked(false);
+    setfairStructureClicked(false);
+    setmaintenanceClicked(false);
+    setchatClicked(false);
+  };
+
+  const handleClickReport = () => {
+    setHomeClicked(false);
+    setBikesClicked(false);
+    setuserClicked(false);
+    setpaymentClicked(false);
+    setreportClicked(true);
+    setnotificationClicked(false);
+    setfairStructureClicked(false);
+    setmaintenanceClicked(false);
+    setchatClicked(false);
+  };
+
+  const handleClickNotification = () => {
+    setHomeClicked(false);
+    setBikesClicked(false);
+    setuserClicked(false);
+    setpaymentClicked(false);
+    setreportClicked(false);
+    setnotificationClicked(true);
+    setfairStructureClicked(false);
+    setmaintenanceClicked(false);
+    setchatClicked(false);
+  };
+
+  const handleClickFairstructure = () => {
+    setHomeClicked(false);
+    setBikesClicked(false);
+    setuserClicked(false);
+    setpaymentClicked(false);
+    setreportClicked(false);
+    setnotificationClicked(false);
+    setfairStructureClicked(true);
+    setmaintenanceClicked(false);
+    setchatClicked(false);
+  };
+
+  const handleClickMaintanance = () => {
+    setHomeClicked(false);
+    setBikesClicked(false);
+    setuserClicked(false);
+    setpaymentClicked(false);
+    setreportClicked(false);
+    setnotificationClicked(false);
+    setfairStructureClicked(false);
+    setmaintenanceClicked(true);
+    setchatClicked(false);
+  };
+
+  const handleClickChat = () => {
+    setHomeClicked(false);
+    setBikesClicked(false);
+    setuserClicked(false);
+    setpaymentClicked(false);
+    setreportClicked(false);
+    setnotificationClicked(false);
+    setfairStructureClicked(false);
+    setmaintenanceClicked(false);
+    setchatClicked(true);
   };
 
   return (
@@ -29,14 +142,111 @@ function Home_page() {
         </div>
 
         <div>
-          <button
+          <Link
+            to="/home"
             className="home_button"
-            style={{ color: isClicked ? "black" : "grey" }}
-            onClick={handleClick}
+            style={{ color: homeClicked ? "black" : "grey" }}
+            onClick={handleClickHome}
           >
             <FontAwesomeIcon icon={faHome} />
-            <span>Home</span>
-          </button>
+            <span className="home_adj">Home</span>
+          </Link>
+        </div>
+
+        <div>
+          <Link
+            to="/home"
+            className="home_button_space"
+            style={{ color: bikesClicked ? "black" : "grey" }}
+            onClick={handleClickBikes}
+          >
+            <FontAwesomeIcon icon={faBicycle} />
+            <span className="home_adj">Bikes</span>
+          </Link>
+        </div>
+
+        <div>
+          <Link
+            to="/home"
+            className="home_button_space"
+            style={{ color: userClicked ? "black" : "grey" }}
+            onClick={handleClickUser}
+          >
+            <FontAwesomeIcon icon={faUser} />
+            <span className="home_adj">User</span>
+          </Link>
+        </div>
+
+        <div>
+          <Link
+            to="/home"
+            className="home_button_space"
+            style={{ color: PaymentClicked ? "black" : "grey" }}
+            onClick={handleClickPayment}
+          >
+            <FontAwesomeIcon icon={faSprayCan} />
+            <span className="home_adj">Payment</span>
+          </Link>
+        </div>
+
+        <div>
+          <Link
+            to="/home"
+            className="home_button_space"
+            style={{ color: ReportClicked ? "black" : "grey" }}
+            onClick={handleClickReport}
+          >
+            <FontAwesomeIcon icon={faSquarePollHorizontal} />
+            <span className="home_adj">Reports</span>
+          </Link>
+        </div>
+
+        <div>
+          <Link
+            to="/home"
+            className="home_button_space"
+            style={{ color: NotificationClicked ? "black" : "grey" }}
+            onClick={handleClickNotification}
+          >
+            <FontAwesomeIcon icon={faBell} />
+            <span className="home_adj">Notification</span>
+          </Link>
+        </div>
+
+        <div>
+          <Link
+            to="/home"
+            className="home_button_space"
+            style={{ color: FairstructureClicked ? "black" : "grey" }}
+            onClick={handleClickFairstructure}
+          >
+            <FontAwesomeIcon icon={faPersonFallingBurst} />
+            <span className="home_adj">Fair Structure</span>
+          </Link>
+        </div>
+
+        <div>
+          <Link
+            to="/home"
+            className="home_button_space"
+            style={{ color: MaintenanceClicked ? "black" : "grey" }}
+            onClick={handleClickMaintanance}
+          >
+            <FontAwesomeIcon icon={faMagnifyingGlassLocation} />
+            <span className="home_adj">Maintenance</span>
+          </Link>
+        </div>
+
+        <div>
+          <Link
+            to="/home"
+            className="home_button_space"
+            style={{ color: ChatClicked ? "black" : "grey" }}
+            onClick={handleClickChat}
+          >
+            <FontAwesomeIcon icon={faChartBar} />
+            <span className="home_adj">Chat</span>
+          </Link>
         </div>
       </div>
 
