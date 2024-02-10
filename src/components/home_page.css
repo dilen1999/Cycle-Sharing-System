@@ -11,6 +11,19 @@
   position: relative; /* Needed for positioning inner circle */
 }
 
+.circle_logo_profile {
+  align-items: center;
+  justify-content: center;
+  width: 47px; /* Adjust outer circle width */
+  height: 47px; /* Adjust outer circle height */
+  border-radius: 50%;
+  border: 1px solid black; /* Set border color and width */
+  background: red;
+  margin-top: 120px;
+  margin-left: 50px;
+  position: relative; /* Needed for positioning inner circle */
+}
+
 .inner_circle {
   width: 70px; /* Adjust inner circle width */
   height: 70px; /* Adjust inner circle height */
@@ -22,9 +35,31 @@
   transform: translate(-50%, -50%);
 }
 
+.inner_circle_profile {
+  width: 47px; /* Adjust inner circle width */
+  height: 47px; /* Adjust inner circle height */
+  border-radius: 50%;
+  background: blue; /* Change inner circle background color */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .logo_image {
   width: 70px; /* Adjust logo image size */
   height: 70px; /* Adjust logo image size */
+  border-radius: 50%;
+  object-fit: cover; /* Preserve aspect ratio and cover the entire circle */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo_image_profile {
+  width: 47px; /* Adjust logo image size */
+  height: 47px; /* Adjust logo image size */
   border-radius: 50%;
   object-fit: cover; /* Preserve aspect ratio and cover the entire circle */
   position: absolute;
@@ -88,4 +123,12 @@
 
 .column {
   background-color: bisque;
+}
+
+.profile_name{
+  margin-bottom: 20px;
+  margin-top: 130px;
+  margin-left: 40px;
+  align-items: center;
+  text-align: left;
 }

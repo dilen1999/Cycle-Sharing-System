@@ -1,8 +1,19 @@
 import React, { useState } from "react";
 import "./home_page.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faBicycle, faUser, faSprayCan, faSquarePollHorizontal, faBell, faPersonFallingBurst, faMagnifyingGlassLocation, faChartBar } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHome,
+  faBicycle,
+  faUser,
+  faSprayCan,
+  faSquarePollHorizontal,
+  faBell,
+  faPersonFallingBurst,
+  faMagnifyingGlassLocation,
+  faChartBar,
+} from "@fortawesome/free-solid-svg-icons";
 import logo from "../images/logo.jpeg";
+import profile from "../images/profile.png";
 import { Link } from "react-router-dom";
 
 function Home_page() {
@@ -247,6 +258,16 @@ function Home_page() {
             <FontAwesomeIcon icon={faChartBar} />
             <span className="home_adj">Chat</span>
           </Link>
+        </div>
+
+        <div style={{ width: "20%", display: "flex", flexDirection: "row" }}>
+          <div className="circle_logo_profile">
+            <div className="inner_circle_profile"></div>
+            <img src={profile} alt="" className="logo_image_profile" />
+          </div>
+          <div className="profile_name">
+            <text>Anantharam</text>
+          </div>
         </div>
       </div>
 
