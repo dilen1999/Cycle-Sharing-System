@@ -102,14 +102,133 @@
   margin-left: 20px;
   margin-top: 10px;
 }
+.home_button_spaceB {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.home_button_spaceU {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.home_button_spaceP {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.home_button_spaceR {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.home_button_spaceN {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.home_button_spaceF {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.home_button_spaceM {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.home_button_spaceC {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
 
 .home_button span {
-  margin-left: 7px; /* Adjust spacing between icon and text */
+  margin-left: 12px; /* Adjust spacing between icon and text */
 }
-.home_button_space span {
-  margin-left: 10px; /* Adjust spacing between icon and text */
+.home_button_spaceB span {
+  margin-left: 9px; /* Adjust spacing between icon and text */
 }
-.home_adj{
+
+.home_button_spaceU span {
+  margin-left: 18px; /* Adjust spacing between icon and text */
+}
+.home_button_spaceP span {
+  margin-left: 21px; /* Adjust spacing between icon and text */
+}
+.home_button_spaceR span {
+  margin-left: 18px; /* Adjust spacing between icon and text */
+}
+.home_button_spaceN span {
+  margin-left: 18px; /* Adjust spacing between icon and text */
+}
+
+.home_button_spaceF span {
+  margin-left: 9px; /* Adjust spacing between icon and text */
+}
+
+.home_button_spaceM span {
+  margin-left: 15px; /* Adjust spacing between icon and text */
+}
+.home_button_spaceC span {
+  margin-left: 16px; /* Adjust spacing between icon and text */
+}
+
+.home_adj {
   margin-top: 0px;
 }
 
@@ -120,15 +239,71 @@
 .home_button_space {
   text-decoration: none; /* Remove underline */
 }
-
-.column {
-  background-color: bisque;
+.home_button_spaceB {
+  text-decoration: none; /* Remove underline */
 }
 
-.profile_name{
+.home_button_spaceU {
+  text-decoration: none; /* Remove underline */
+}
+
+.home_button_spaceP {
+  text-decoration: none; /* Remove underline */
+}
+.home_button_spaceR {
+  text-decoration: none; /* Remove underline */
+}
+
+.home_button_spaceN {
+  text-decoration: none; /* Remove underline */
+}
+.home_button_spaceF {
+  text-decoration: none; /* Remove underline */
+}
+
+.home_button_spaceM {
+  text-decoration: none; /* Remove underline */
+}
+.home_button_spaceC {
+  text-decoration: none; /* Remove underline */
+}
+
+.column {
+  background-color: #effaff;
+}
+
+.profile_name {
   margin-bottom: 20px;
   margin-top: 130px;
   margin-left: 40px;
   align-items: center;
   text-align: left;
+}
+
+.Dashboard {
+  align-items: center;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.dot{
+  margin-top: 10px;
+}
+
+.Location {
+  text-decoration: none; /* Remove underline */
+}
+.Location {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 30px;
+  margin-top: 10px;
 }

@@ -16,7 +16,7 @@ import logo from "../images/logo.jpeg";
 import profile from "../images/profile.png";
 import { Link } from "react-router-dom";
 
-function Home_page() {
+function Bikes() {
   const [homeClicked, setHomeClicked] = useState(false);
   const [bikesClicked, setBikesClicked] = useState(false);
   const [userClicked, setuserClicked] = useState(false);
@@ -166,7 +166,7 @@ function Home_page() {
 
         <div>
           <Link
-            to="/bikes"
+            to="/home"
             className="home_button_spaceB"
             style={{ color: bikesClicked ? "black" : "grey" }}
             onClick={handleClickBikes}
@@ -293,37 +293,10 @@ function Home_page() {
           </div>
         </div>
 
-        <div style={{ display: "flex" }}>
-          <Link
-            to=""
-            className="Location"
-            style={{ color: MaintenanceClicked ? "black" : "grey" }}
-            onClick={handleClickMaintanance}
-          >
-            <span className="Location1">Location</span>
-          </Link>
-
-          <Link
-            to=""
-            className="Location"
-            style={{ color: MaintenanceClicked ? "black" : "grey" }}
-            onClick={handleClickMaintanance}
-          >
-            <span className="Location1">Stations</span>
-          </Link>
-
-          <Link
-            to=""
-            className="Location"
-            style={{ color: MaintenanceClicked ? "black" : "grey" }}
-            onClick={handleClickMaintanance}
-          >
-            <span className="Location1">Current users</span>
-          </Link>
-        </div>
+        
       </div>
     </div>
   );
 }
 
-export default Home_page;
+export default Bikes;
