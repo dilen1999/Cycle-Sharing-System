@@ -33,7 +33,7 @@ function Login() {
           </div>
         </div>
         <div className="gap">
-          <Link to="/sidebar" className="login">Login</Link>
+          <Link to="/home" className="login">Login</Link>
         </div>
       </div>
     </div>
