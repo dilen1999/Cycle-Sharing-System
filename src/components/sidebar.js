@@ -28,7 +28,7 @@ function Sidebar() {
   return (
     <div style={{ display: "flex", flexDirection: "row" }}>
       {/* First column */}
-      <div style={{ width: "20%" }}>
+      <div style={{ width: "15%" }}>
         <div className="circle_logo">
           <div className="inner_circle"></div>
           <img src={logo} alt="" className="logo_image" />
@@ -165,7 +165,7 @@ function Sidebar() {
       </div>
 
       {/* Second column */}
-      <div style={{ width: "80%" }} className="column">
+      <div style={{ width: "85%" }} className="column">
         {/* Render content dynamically based on activeTab state */}
         {activeTab === "Home" && <Home />}
         {activeTab === "Bikes" && <Bike />}
