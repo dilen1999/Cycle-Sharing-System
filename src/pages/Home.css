@@ -27,6 +27,18 @@
     width: 256px; /* Adjust width as needed */
     height: 60px;
   }
+
+  .StaionDetailsBoxuser {
+    background-color: #cbe9ef;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 256px; /* Adjust width as needed */
+    height: 100px;
+  }
   .number{
     font-size: 24px;
     text-align: center;
@@ -39,6 +51,7 @@
   .text{
     margin-top: 0;
     margin-left: 10px;
+    
   }
   
   .StaionBox{
@@ -48,7 +61,19 @@
     margin-top: 10px;
     margin-left: 25px;
     margin-right: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 600px; /* Adjust width as needed */
-    height: 369px;
+    height: 250px;
+  }
+
+  .insidebox{
+    background-color: #cbe9ef;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 10px;
+    border-radius: 20px;
+    width: 220px; /* Adjust width as needed */
+    height: 120px;
   }

@@ -5,8 +5,25 @@ import { Link } from "react-router-dom";
 import "../components/Sidebar.css"; // Make sure this path is correct
 import "./Home.css";
 import { Flex } from "antd";
+// import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+// import { Doughnut } from "react-chartjs-2";
+
+// ChartJS.register(ArcElement, Tooltip, Legend);
 
 function Home() {
+  const data = {
+    labels: ["Yes", "No"],
+    datasets: [
+      {
+        label: "poll",
+        data: [3, 6],
+        backgroundColor: ["black", "red"],
+        borderColor: ["black", "red"],
+      },
+    ],
+  };
+  const options = {};
+
   const [bellClicked, setBellClicked] = useState(false);
   const [locationClicked, setLocationClicked] = useState(true);
   const [userClicked, setUserClicked] = useState(false);
@@ -96,14 +113,14 @@ function Home() {
 
         {locationClicked && (
           <div className="locationDetailsBox">
-            
             <p>This box for google map Location</p>
           </div>
         )}
 
+        {/* Stations */}
         {stationClicked && (
-          <div style={{display: "flex",flexDirection: "row" }}>
-            <div className="StaionDetailsBox" style={{marginLeft: "70px"}}>
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <div className="StaionDetailsBox" style={{ marginLeft: "70px" }}>
               <p className="text">Total bikes</p>
               <p className="number">134</p>
             </div>
@@ -120,22 +137,125 @@ function Home() {
               <p className="number">04</p>
             </div>
           </div>
-          
         )}
+        <div style={{ display: "flex", height: "10px" }}></div>
 
         {stationClicked && (
-          <div style={{display: "flex",flexDirection: "row" }}>
-            <div className="StaionBox" >
+          <div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                marginLeft: "13px",
+              }}
+            >
+              <div className="StaionBox">
+                <p className="text">Station : A</p>
+                <div
+                  className="insidebox"
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  <div style={{ display: "flex", flexDirection: "row" }}>
+                    <p className="text">Current avilable bikes: </p>
+                    <p className="text">58</p>
+                  </div>
+                  <div style={{ display: "flex", flexDirection: "row" }}>
+                    <p className="text">Current parking places: </p>
+                    <p className="text">08</p>
+                  </div>
+                </div>
+                {/* <div>
+                  <Doughnut
+                  data  ={data}
+                  options = {options}
+                  >
+
+                  </Doughnut>
+                </div> */}
+              </div>
+
+              <div className="StaionBox">
+                <p className="text">Station : B</p>
+                <div
+                  className="insidebox"
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  <div style={{ display: "flex", flexDirection: "row" }}>
+                    <p className="text">Current avilable bikes: </p>
+                    <p className="text">58</p>
+                  </div>
+                  <div style={{ display: "flex", flexDirection: "row" }}>
+                    <p className="text">Current parking places: </p>
+                    <p className="text">08</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style={{ display: "flex", height: "10px" }}></div>
+
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                marginLeft: "13px",
+              }}
+            >
+              <div className="StaionBox">
+                <p className="text">Station : C</p>
+                <div
+                  className="insidebox"
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  <div style={{ display: "flex", flexDirection: "row" }}>
+                    <p className="text">Current avilable bikes: </p>
+                    <p className="text">58</p>
+                  </div>
+                  <div style={{ display: "flex", flexDirection: "row" }}>
+                    <p className="text">Current parking places: </p>
+                    <p className="text">08</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="StaionBox">
+                <p className="text">Station : D</p>
+                <div
+                  className="insidebox"
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  <div style={{ display: "flex", flexDirection: "row" }}>
+                    <p className="text">Current avilable bikes: </p>
+                    <p className="text">58</p>
+                  </div>
+                  <div style={{ display: "flex", flexDirection: "row" }}>
+                    <p className="text">Current parking places: </p>
+                    <p className="text">08</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {userClicked && (
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <div className="StaionDetailsBoxuser" style={{ marginLeft: "70px" }}>
               <p className="text">Total bikes</p>
               <p className="number">134</p>
             </div>
-            
-            <div className="StaionBox">
+            <div className="StaionDetailsBoxuser">
+              <p className="text">Bikes in outside</p>
+              <p className="number">65</p>
+            </div>
+            <div className="StaionDetailsBoxuser">
+              <p className="text">Bikes in stations</p>
+              <p className="number">45</p>
+            </div>
+            <div className="StaionDetailsBoxuser">
               <p className="text">Bikes in maintenance</p>
               <p className="number">04</p>
             </div>
           </div>
-          
         )}
       </div>
     </div>
@@ -143,5 +263,3 @@ function Home() {
 }
 
 export default Home;
-
-
