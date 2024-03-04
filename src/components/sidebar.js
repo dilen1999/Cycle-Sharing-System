@@ -17,6 +17,15 @@ import profile from "../images/profile.png";
 import { Link } from "react-router-dom";
 import Home from "../pages/Home";
 import Bike from "../pages/bike";
+import User from "../pages/User";
+import Payment from "../pages/Payment";
+import Chat from "../pages/Chat";
+import Report from "../pages/Report";
+import Fair from "../pages/Fair_Structure";
+import Notification from "../pages/Notification";
+import Maintenance from "../pages/Maintenance";
+import Fair_Structure from "../pages/Fair_Structure";
+
 
 function Sidebar() {
   const [activeTab, setActiveTab] = useState("Home");
@@ -169,17 +178,17 @@ function Sidebar() {
         {/* Render content dynamically based on activeTab state */}
         {activeTab === "Home" && <Home />}
         {activeTab === "Bikes" && <Bike />}
-        {activeTab === "User" && <div>Content for User</div>}
-        {activeTab === "Payment" && <div>Content for Payment</div>}
-        {activeTab === "Reports" && <div>Content for Reports</div>}
-        {activeTab === "Notification" && <div>Content for Notification</div>}
+        {activeTab === "User" && <User/>}
+        {activeTab === "Payment" && <Payment/>}
+        {activeTab === "Reports" && <Report/>}
+        {activeTab === "Notification" && <Notification/>}
         {activeTab === "Fair Structure" && (
-          <div>Content for Fair Structure</div>
+          <Fair_Structure/>
         )}
         {activeTab === "Maintenance" && (
-          <div>Content for Maintenance</div>
+         <Maintenance/>
         )}
-        {activeTab === "Chat" && <div>Content for Chat</div>}
+        {activeTab === "Chat" && <Chat/> }
       </div>
     </div>
   );
