@@ -23,6 +23,9 @@
   .gap{
     margin-top: 40px;
   }
+  .login {
+    text-decoration: none; /* Remove underline */
+  }
   .gap1{
     margin-top: 40px;
   }

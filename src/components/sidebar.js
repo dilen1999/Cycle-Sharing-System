@@ -20,11 +20,11 @@ import Bike from "../pages/bike";
 import User from "../pages/User";
 import Payment from "../pages/Payment";
 import Chat from "../pages/Chat";
-import Report from "../pages/Report";
-import Fair from "../pages/Fair_Structure";
+
 import Notification from "../pages/Notification";
 import Maintenance from "../pages/Maintenance";
 import Fair_Structure from "../pages/Fair_Structure";
+import Report1 from "../pages/Report";
 
 
 function Sidebar() {
@@ -180,7 +180,7 @@ function Sidebar() {
         {activeTab === "Bikes" && <Bike />}
         {activeTab === "User" && <User/>}
         {activeTab === "Payment" && <Payment/>}
-        {activeTab === "Reports" && <Report/>}
+        {activeTab === "Reports" && <Report1/>}
         {activeTab === "Notification" && <Notification/>}
         {activeTab === "Fair Structure" && (
           <Fair_Structure/>

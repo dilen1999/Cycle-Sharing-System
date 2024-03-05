@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Report() {
+function Report1() {
   return (
     <div>
-      Report go
+      Report1 go
     </div>
   )
 }
 
-export default Report
+export default Report1

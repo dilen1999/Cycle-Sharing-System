@@ -13,14 +13,15 @@ import Home from "./pages/Home";
 import User from "./pages/User";
 import Payment from "./pages/Payment";
 import Chat from "./pages/Chat";
-import Report from "./pages/Report";
-import Fair from "./pages/Fair_Structure";
+
+
 import Notification from "./pages/Notification";
 import Maintenance from "./pages/Maintenance";
 import Fair_Structure from "./pages/Fair_Structure";
+import Report1 from "./pages/Report";
 
 function App() {
-  return (
+  return (  
     <BrowserRouter>
       <div className="App">
         <Routes>
@@ -71,7 +72,7 @@ function App() {
             path="/report"
             element={
               <Sidebar>
-                <Report />
+                <Report1 />
               </Sidebar>
             }
           />
