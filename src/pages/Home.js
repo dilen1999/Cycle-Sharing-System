@@ -239,7 +239,10 @@ function Home() {
 
         {userClicked && (
           <div style={{ display: "flex", flexDirection: "row" }}>
-            <div className="StaionDetailsBoxuser" style={{ marginLeft: "70px" }}>
+            <div
+              className="StaionDetailsBoxuser"
+              style={{ marginLeft: "70px" }}
+            >
               <p className="text">Total bikes</p>
               <p className="number">134</p>
             </div>
@@ -257,6 +260,45 @@ function Home() {
             </div>
           </div>
         )}
+      </div>
+
+      <div>Current Users</div>
+      <div>
+        <table className="table">
+          <thead>
+            <tr>
+              <th scope="col" >ID</th>
+              <th scope="col">Profile</th>
+              <th scope="col">Name</th>
+              <th scope="col">Mobile</th>
+              <th scope="col">Current location</th>
+            </tr>
+          </thead>
+          <tbody className="table-group-divider">
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>George</td>
+              <td>0778023256</td>
+              <td>colombo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>ram</td>
+              <td>0775245654</td>
+              <td>jaffna</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="1">Larry the Bird</td>
+              <td>sethu</td>
+              <td>0778214563</td>
+              <td>mannar</td>
+              
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );
