@@ -1,6 +1,7 @@
 import React from "react";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import "./Bike.css";
 
 function Bike() {
   return (
@@ -24,7 +25,7 @@ function Bike() {
       </div>
 
       <div>
-        <div>
+        <div style={{marginTop: "20px"}}>
           <div style={{ display: "flex", flexDirection: "row" }}>
             <div
               className="StaionDetailsBoxuser"
@@ -57,14 +58,20 @@ function Bike() {
           </div>
           <div className="current_User">Bikes</div>
           <div>
-            <table className="table">
+            <table className="bike-table">
               <thead>
                 <tr>
                   <th scope="col">ID</th>
                   <th scope="col">Profile</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Mobile</th>
+                  <th scope="col">Brand</th>
+                  <th scope="col">Model</th>
+                  <th scope="col">Bike code no</th>
+                  <th scope="col">Last maintenance date</th>
+                  <th scope="col">On ride?</th>
+                  <th scope="col">Current user</th>
                   <th scope="col">Current location</th>
+                  <th scope="col">Color</th>
+                  <th scope="col">Action</th>
                 </tr>
               </thead>
               <tbody className="table-group-divider">
@@ -74,9 +81,14 @@ function Bike() {
                     <div className="profile-circle"></div>{" "}
                     {/* Circular profile picture */}
                   </td>
-                  <td>George</td>
-                  <td>0778023256</td>
-                  <td>colombo</td>
+                  <td>Lumala</td>
+                  <td>Mountain bike</td>
+                  <td>678545</td>
+                  <td>23-12-2023</td>
+                  <td>No</td>
+                  <td>None</td>
+                  <td>Station A</td>
+                  <td>Red</td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
@@ -84,9 +96,14 @@ function Bike() {
                     <div className="profile-circle"></div>{" "}
                     {/* Circular profile picture */}
                   </td>
-                  <td>ram</td>
-                  <td>0775245654</td>
-                  <td>jaffna</td>
+                  <td>Hero</td>
+                  <td>Boy's bike</td>
+                  <td>457896</td>
+                  <td>20-02-2023</td>
+                  <td>Yes</td>
+                  <td>User 1</td>
+                  <td>Station C</td>
+                  <td>Black</td>
                 </tr>
                 <tr>
                   <th scope="row">3</th>
@@ -94,9 +111,14 @@ function Bike() {
                     <div className="profile-circle"></div>{" "}
                     {/* Circular profile picture */}
                   </td>
-                  <td>sethu</td>
-                  <td>0778214563</td>
-                  <td>mannar</td>
+                  <td>DSL</td>
+                  <td>Girl's bike</td>
+                  <td>578955</td>
+                  <td>13-04-2024</td>
+                  <td>Yes</td>
+                  <td>User 4</td>
+                  <td>Station D</td>
+                  <td>Red</td>
                 </tr>
               </tbody>
             </table>

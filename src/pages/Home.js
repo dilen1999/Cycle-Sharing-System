@@ -7,6 +7,10 @@ import "./Home.css";
 import { Flex } from "antd";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
+// import Container from 'react-bootstrap/Container';
+// import { Form } from "react-bootstrap/lib/navbar";
+// import { InputGroup } from "react-bootstrap";
+// // import Navbar from 'react-bootstrap/Navbar';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -15,7 +19,7 @@ function Home() {
     datasets: [
       {
         label: "poll",
-        data: [58, 8],
+        data: [58, 28],
         backgroundColor: ["green", "red"],
         borderColor: ["green", "red"],
       },
@@ -273,8 +277,22 @@ function Home() {
                   <p className="numberuser">04</p>
                 </div>
               </div>
-              <div className="current_User">Current Users</div>
+              <div style={{ display: "flex", flexDirection: "row" }}>
+                <div className="current_User">Current Users</div>
+                <input
+                  className="Search_User"
+                  type="text"
+                  placeholder="Search"
+                />
+              </div>
+
               <div>
+                {/* <Container> */}
+                {/* <Form>
+                <InputGroup className="my-3">
+                  <Form.Control placeholder='search'/>
+                </InputGroup>
+              </Form> */}
                 <table className="table">
                   <thead>
                     <tr>
@@ -318,6 +336,7 @@ function Home() {
                     </tr>
                   </tbody>
                 </table>
+                {/* </Container> */}
               </div>
             </div>
           </div>
