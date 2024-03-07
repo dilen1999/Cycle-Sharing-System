@@ -47,6 +47,22 @@
     margin-bottom: 50px;
     margin-left: 70px;
   }
+  .numberuser{
+    font-size: 24px;
+    text-align: left;
+    
+    margin-top: 20px;
+    
+    margin-left: 70px;
+  }
+  .numberuser1{
+    font-size: 24px;
+    text-align: left;
+    
+    margin-top: 4px;
+    
+    margin-left: 70px;
+  }
 
   .text{
     margin-top: 0;
@@ -87,7 +103,7 @@
     background-color: #E1F3FC; /* Set the background color here */
   }
   .table {
-    margin-top: 30px;
+    margin-top: 25px;
     margin-left: 40px;
     font-size: 18px;
   }
@@ -95,3 +111,27 @@
     background-color: #fff; /* Set the background color for even rows */
     border-bottom: 5px solid black;
   }
+
+
+  .position_of_chart{
+    margin-left: 400px;
+    height: 150px;
+    width: 150px;
+    
+    margin-bottom: 300px;
+  }
+
+  .current_User{
+    font-size: 24px;
+    margin-left: 25px;
+    margin-top: 25px;
+  }
+
+  .profile-circle {
+    width: 30px; /* Adjust the width and height as needed */
+    height: 30px;
+    border-radius: 50%; /* Make it circular */
+    background-color: rgb(218, 60, 126);
+    background-size: cover; /* Ensure the image covers the entire circle */
+  }
+  
